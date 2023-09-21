@@ -1,0 +1,40 @@
+{
+  "query_filters": [
+    {
+      "layerId": "ESTUDIOS_TRANSITO_606",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "ESTUDIOS_TRANSITO_1813",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "ESTUDIOS_TRANSITO_916",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4846",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_1167",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4982",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_5128",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_6769",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "ZONAS_IMPLEMENTACI%C3%93N_EV_3015",
+      "field": "CREATED_DATE"
+    }
+  ]
+}
