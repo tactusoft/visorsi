@@ -954,6 +954,7 @@
       "uri": "widgets/common/text/",
       "config": {
         "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24px;\">Visor Subdirección de Infraestructura</span></p>",
+        "placeholder": "<p><span style=\"font-size: 24px; color: rgb(255, 255, 255);\">Título</span></p>",
         "style": {
           "verticalAlign": "center",
           "wrap": true,
@@ -969,6 +970,7 @@
       "uri": "widgets/common/text/",
       "config": {
         "text": "<p><span style=\"font-size: 12px; color: rgb(255, 255, 255);\">﻿Secretaría Distrital de Movilidad﻿</span></p>",
+        "placeholder": "<p><span style=\"font-size: 16px; color: rgb(255, 255, 255);\">Subtítulo</span></p>",
         "style": {
           "verticalAlign": "center",
           "wrap": true,
@@ -3365,7 +3367,8 @@
           "enableMapPrintExtents": true,
           "enableOutputSpatialReference": false,
           "enableQuality": true,
-          "enableFeatureAttribution": true
+          "enableFeatureAttribution": true,
+          "showLabels": false
         },
         "hasInitBorder": true,
         "printCustomTemplate": [
@@ -4082,7 +4085,7 @@
       "home": []
     }
   ],
-  "timestamp": 1695313132763,
+  "timestamp": 1695651551415,
   "header": {
     "layout": {
       "LARGE": "layout_15"
@@ -4102,13 +4105,7 @@
     }
   },
   "attributes": {
-    "portalUrl": "https://movilidadbogota.maps.arcgis.com",
-    "isWebTier": false,
-    "clientId": "",
-    "title": "Visor SI",
-    "description": "",
-    "type": "Web Experience",
-    "thumbnail": null
+    "portalUrl": "https://movilidadbogota.maps.arcgis.com"
   },
   "sharedThemeVariables": {
     "header": {},
@@ -4127,6 +4124,13 @@
       "url": "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
       "source": "org",
       "orgSetting": {}
+    },
+    "utility_2": {
+      "id": "utility_2",
+      "type": "PRINTING",
+      "source": "custom",
+      "url": "https://sig.simur.gov.co/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+      "label": "Export Web Map Task"
     }
   }
 }
