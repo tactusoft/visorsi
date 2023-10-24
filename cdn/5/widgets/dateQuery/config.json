@@ -1,0 +1,42 @@
+{
+  "query_filters": [
+    { "layerId": "Actuaciones_Estrategicas_3323", "field": "FECHA_CAPT" },
+    {
+      "layerId": "ASV_ISV_2229",
+      "field": "FECHA"
+    },
+    {
+      "layerId": "ESTUDIOS_TRANSITO_1813",
+      "field": "FECHA_APROBACION"
+    },
+    { "layerId": "18a6197222b-layer-70", "field": "FECHA_APROBACION" },
+    {
+      "layerId": "230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4846",
+      "field": "FECHA_APROBACION"
+    },
+    { "layerId": "18a619719bf-layer-64", "field": "FECHA_APROBACION" },
+    { "layerId": "18a6197222b-layer-69", "field": "FECHA_APROBACION" },
+    {
+      "layerId": "230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_1167",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "ESTUDIOS_TRANSITO_606",
+      "field": "FECHA_APROBACION"
+    },
+    { "layerId": "18a619719be-layer-63", "field": "FECHA_APROBACION" },
+    {
+      "layerId": "230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4982",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_5128",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_6769",
+      "field": "FECHA_APROBACION"
+    },
+    { "layerId": "18a617cc322-layer-102", "field": "FECHA_CAPT" }
+  ]
+}
