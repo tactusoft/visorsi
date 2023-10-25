@@ -154,8 +154,8 @@
     "layout_2": {
       "type": "FIXED",
       "order": [
-        "1",
         "0",
+        "1",
         "2",
         "5",
         "4"
@@ -163,8 +163,14 @@
       "content": {
         "0": {
           "type": "WIDGET",
-          "bbox": {},
-          "widgetId": "widget_8"
+          "bbox": {
+            "left": "1px",
+            "right": "55px",
+            "top": "13px",
+            "bottom": "57px"
+          },
+          "widgetId": "widget_8",
+          "isPending": false
         },
         "1": {
           "type": "WIDGET",
@@ -954,6 +960,7 @@
       "uri": "widgets/common/text/",
       "config": {
         "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24px;\">Visor Subdirección de Infraestructura</span></p>",
+        "placeholder": "<p><span style=\"font-size: 24px; color: rgb(255, 255, 255);\">Título</span></p>",
         "style": {
           "verticalAlign": "center",
           "wrap": true,
@@ -969,6 +976,7 @@
       "uri": "widgets/common/text/",
       "config": {
         "text": "<p><span style=\"font-size: 12px; color: rgb(255, 255, 255);\">﻿Secretaría Distrital de Movilidad﻿</span></p>",
+        "placeholder": "<p><span style=\"font-size: 16px; color: rgb(255, 255, 255);\">Subtítulo</span></p>",
         "style": {
           "verticalAlign": "center",
           "wrap": true,
@@ -988,7 +996,10 @@
           "displayType": "STACK",
           "vertical": false,
           "size": {},
-          "arrangement": "fixed"
+          "arrangement": "fixed",
+          "openStarts": [
+            "widget_8"
+          ]
         },
         "appearance": {
           "space": 0,
@@ -9256,7 +9267,7 @@
       "home": []
     }
   ],
-  "timestamp": 1698162482836,
+  "timestamp": 1698229718606,
   "header": {
     "layout": {
       "LARGE": "layout_15"
@@ -9276,13 +9287,7 @@
     }
   },
   "attributes": {
-    "portalUrl": "https://movilidadbogota.maps.arcgis.com",
-    "isWebTier": false,
-    "clientId": "",
-    "title": "Visor SI",
-    "description": "",
-    "type": "Web Experience",
-    "thumbnail": null
+    "portalUrl": "https://movilidadbogota.maps.arcgis.com"
   },
   "sharedThemeVariables": {
     "header": {},
