@@ -2823,14 +2823,14 @@
             }
           },
           {
-            "id": "dataSource_1-PARADEROS_9647-7",
+            "id": "dataSource_1-18c117e917a-layer-70-21",
             "name": "Paraderos SITP",
             "useDataSource": {
-              "dataSourceId": "dataSource_1-PARADEROS_9647",
-              "mainDataSourceId": "dataSource_1-PARADEROS_9647",
+              "dataSourceId": "dataSource_1-18c117e917a-layer-70",
+              "mainDataSourceId": "dataSource_1-18c117e917a-layer-70",
               "rootDataSourceId": "dataSource_1",
               "fields": [
-                "FID",
+                "OBJECTID",
                 "orden",
                 "fecha_visi",
                 "CENEFA",
@@ -2839,7 +2839,7 @@
                 "NOMBRE",
                 "DIRECCIÓN",
                 "LOCALIDAD",
-                "VALIDACION",
+                "VALIDACIONES",
                 "FECHA_VALI",
                 "PK_Andén_",
                 "CIV",
@@ -2854,16 +2854,17 @@
                 "IMPLEMENTA",
                 "LONGUITUD",
                 "LATITUD",
-                "TIPOLOGIA"
+                "TIPOLOGIA",
+                "OBSERVACIONES__LINEAMIENTOS_SV"
               ]
             },
             "allFields": [
               {
-                "jimuName": "FID",
-                "name": "FID",
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
                 "type": "NUMBER",
                 "esriType": "esriFieldTypeOID",
-                "alias": "FID",
+                "alias": "ObjectID",
                 "format": {
                   "digitSeparator": false,
                   "places": 0
@@ -2873,18 +2874,18 @@
                 "jimuName": "orden",
                 "name": "orden",
                 "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
+                "esriType": "esriFieldTypeDouble",
                 "alias": "orden",
                 "format": {
                   "digitSeparator": false,
-                  "places": 0
+                  "places": 6
                 }
               },
               {
                 "jimuName": "fecha_visi",
                 "name": "fecha_visi",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
+                "type": "DATE",
+                "esriType": "esriFieldTypeDate",
                 "alias": "fecha_visi",
                 "format": null
               },
@@ -2937,12 +2938,15 @@
                 "format": null
               },
               {
-                "jimuName": "VALIDACION",
-                "name": "VALIDACION",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "VALIDACION",
-                "format": null
+                "jimuName": "VALIDACIONES",
+                "name": "VALIDACIONES",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "VALIDACIONES",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                }
               },
               {
                 "jimuName": "FECHA_VALI",
@@ -2955,18 +2959,24 @@
               {
                 "jimuName": "PK_Andén_",
                 "name": "PK_Andén_",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
                 "alias": "PK_Andén_",
-                "format": null
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                }
               },
               {
                 "jimuName": "CIV",
                 "name": "CIV",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
                 "alias": "CIV",
-                "format": null
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                }
               },
               {
                 "jimuName": "PK_Ciclorr",
@@ -3069,15 +3079,23 @@
                 "esriType": "esriFieldTypeString",
                 "alias": "TIPOLOGIA",
                 "format": null
+              },
+              {
+                "jimuName": "OBSERVACIONES__LINEAMIENTOS_SV",
+                "name": "OBSERVACIONES__LINEAMIENTOS_SV",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "OBSERVACIONES  LINEAMIENTOS SV",
+                "format": null
               }
             ],
             "tableFields": [
               {
-                "jimuName": "FID",
-                "name": "FID",
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
                 "type": "NUMBER",
                 "esriType": "esriFieldTypeOID",
-                "alias": "FID",
+                "alias": "ObjectID",
                 "format": {
                   "digitSeparator": false,
                   "places": 0
@@ -3090,11 +3108,11 @@
                 "jimuName": "orden",
                 "name": "orden",
                 "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
+                "esriType": "esriFieldTypeDouble",
                 "alias": "orden",
                 "format": {
                   "digitSeparator": false,
-                  "places": 0
+                  "places": 6
                 },
                 "editAuthority": true,
                 "editable": true,
@@ -3103,8 +3121,8 @@
               {
                 "jimuName": "fecha_visi",
                 "name": "fecha_visi",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
+                "type": "DATE",
+                "esriType": "esriFieldTypeDate",
                 "alias": "fecha_visi",
                 "format": null,
                 "editAuthority": true,
@@ -3178,12 +3196,15 @@
                 "visible": true
               },
               {
-                "jimuName": "VALIDACION",
-                "name": "VALIDACION",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "VALIDACION",
-                "format": null,
+                "jimuName": "VALIDACIONES",
+                "name": "VALIDACIONES",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "VALIDACIONES",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
                 "editAuthority": true,
                 "editable": true,
                 "visible": true
@@ -3202,10 +3223,13 @@
               {
                 "jimuName": "PK_Andén_",
                 "name": "PK_Andén_",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
                 "alias": "PK_Andén_",
-                "format": null,
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
                 "editAuthority": true,
                 "editable": true,
                 "visible": true
@@ -3213,10 +3237,13 @@
               {
                 "jimuName": "CIV",
                 "name": "CIV",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
                 "alias": "CIV",
-                "format": null,
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
                 "editAuthority": true,
                 "editable": true,
                 "visible": true
@@ -3354,6 +3381,17 @@
                 "type": "STRING",
                 "esriType": "esriFieldTypeString",
                 "alias": "TIPOLOGIA",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "OBSERVACIONES__LINEAMIENTOS_SV",
+                "name": "OBSERVACIONES__LINEAMIENTOS_SV",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "OBSERVACIONES  LINEAMIENTOS SV",
                 "format": null,
                 "editAuthority": true,
                 "editable": true,
@@ -3798,11 +3836,11 @@
             }
           },
           {
-            "id": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4846-10",
-            "name": "TRAMOS OPERATIVOS ZPP",
+            "id": "dataSource_1-18bb679d88b-layer-75-18bb67861ad-layer-72-18",
+            "name": "Áreas implementación",
             "useDataSource": {
-              "dataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4846",
-              "mainDataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4846",
+              "dataSourceId": "dataSource_1-18bb679d88b-layer-75-18bb67861ad-layer-72",
+              "mainDataSourceId": "dataSource_1-18bb679d88b-layer-75-18bb67861ad-layer-72",
               "rootDataSourceId": "dataSource_1",
               "fields": [
                 "FID",
@@ -3817,6 +3855,9 @@
                 "Snippet",
                 "PopupInfo",
                 "Shape_Leng",
+                "AREA",
+                "ESTADO",
+                "Shape__Area",
                 "Shape__Length"
               ]
             },
@@ -3942,6 +3983,36 @@
                 }
               },
               {
+                "jimuName": "AREA",
+                "name": "AREA",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "AREA",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                }
+              },
+              {
+                "jimuName": "ESTADO",
+                "name": "ESTADO",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "ESTADO",
+                "format": null
+              },
+              {
+                "jimuName": "Shape__Area",
+                "name": "Shape__Area",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape__Area",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                }
+              },
+              {
                 "jimuName": "Shape__Length",
                 "name": "Shape__Length",
                 "type": "NUMBER",
@@ -3950,17 +4021,6 @@
                 "format": {
                   "digitSeparator": false,
                   "places": 6
-                }
-              },
-              {
-                "jimuName": "FECHA_APROBACION",
-                "name": "FECHA_APROBACION",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "Fecha de aprobación",
-                "format": {
-                  "dateFormat": "shortDateLongTime",
-                  "digitSeparator": false
                 }
               }
             ],
@@ -4122,6 +4182,45 @@
                 "visible": true
               },
               {
+                "jimuName": "AREA",
+                "name": "AREA",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "AREA",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "ESTADO",
+                "name": "ESTADO",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "ESTADO",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "Shape__Area",
+                "name": "Shape__Area",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape__Area",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
+                "editAuthority": false,
+                "editable": false,
+                "visible": true
+              },
+              {
                 "jimuName": "Shape__Length",
                 "name": "Shape__Length",
                 "type": "NUMBER",
@@ -4152,15 +4251,469 @@
             }
           },
           {
-            "id": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_1167-11",
-            "name": "TRAMOS ZPP FASE 1",
+            "id": "dataSource_1-18bb679d88b-layer-75-18bb6787555-layer-73-19",
+            "name": "Bahías ZPP",
             "useDataSource": {
-              "dataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_1167",
-              "mainDataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_1167",
+              "dataSourceId": "dataSource_1-18bb679d88b-layer-75-18bb6787555-layer-73",
+              "mainDataSourceId": "dataSource_1-18bb679d88b-layer-75-18bb6787555-layer-73",
               "rootDataSourceId": "dataSource_1",
               "fields": [
-                "FID",
-                "Shape_Le_1",
+                "REG_BAHIA",
+                "COD_UPZ",
+                "CIV",
+                "DIRECCION",
+                "LARGO",
+                "ANCHO",
+                "LOCALIDAD",
+                "COD_BAHIA",
+                "CUPOS",
+                "HABILITACI",
+                "CONCEPTO_S",
+                "FASE",
+                "FECHA_APRO",
+                "Fecha_Sal",
+                "Rad_Salida",
+                "Operativo",
+                "Fecha_OP",
+                "Shape__Area",
+                "Shape__Length"
+              ]
+            },
+            "allFields": [
+              {
+                "jimuName": "FID",
+                "name": "FID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "FID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "REG_BAHIA",
+                "name": "REG_BAHIA",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "REG_BAHIA",
+                "format": null
+              },
+              {
+                "jimuName": "COD_UPZ",
+                "name": "COD_UPZ",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "COD_UPZ",
+                "format": null
+              },
+              {
+                "jimuName": "CIV",
+                "name": "CIV",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "CIV",
+                "format": null
+              },
+              {
+                "jimuName": "DIRECCION",
+                "name": "DIRECCION",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "DIRECCION",
+                "format": null
+              },
+              {
+                "jimuName": "LARGO",
+                "name": "LARGO",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "LARGO",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                }
+              },
+              {
+                "jimuName": "ANCHO",
+                "name": "ANCHO",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "ANCHO",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                }
+              },
+              {
+                "jimuName": "LOCALIDAD",
+                "name": "LOCALIDAD",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "LOCALIDAD",
+                "format": null
+              },
+              {
+                "jimuName": "COD_BAHIA",
+                "name": "COD_BAHIA",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "COD_BAHIA",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "CUPOS",
+                "name": "CUPOS",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "CUPOS",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "HABILITACI",
+                "name": "HABILITACI",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "HABILITACI",
+                "format": null
+              },
+              {
+                "jimuName": "CONCEPTO_S",
+                "name": "CONCEPTO_S",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "CONCEPTO_S",
+                "format": null
+              },
+              {
+                "jimuName": "FASE",
+                "name": "FASE",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "FASE",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "FECHA_APRO",
+                "name": "FECHA_APRO",
+                "type": "DATE",
+                "esriType": "esriFieldTypeDate",
+                "alias": "FECHA_APRO",
+                "format": null
+              },
+              {
+                "jimuName": "Fecha_Sal",
+                "name": "Fecha_Sal",
+                "type": "DATE",
+                "esriType": "esriFieldTypeDate",
+                "alias": "Fecha Salida",
+                "format": null
+              },
+              {
+                "jimuName": "Rad_Salida",
+                "name": "Rad_Salida",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Rad Salida",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                }
+              },
+              {
+                "jimuName": "Operativo",
+                "name": "Operativo",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Operativo",
+                "format": null
+              },
+              {
+                "jimuName": "Fecha_OP",
+                "name": "Fecha_OP",
+                "type": "DATE",
+                "esriType": "esriFieldTypeDate",
+                "alias": "Fecha Operación",
+                "format": null
+              },
+              {
+                "jimuName": "Shape__Area",
+                "name": "Shape__Area",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape__Area",
+                "format": null
+              },
+              {
+                "jimuName": "Shape__Length",
+                "name": "Shape__Length",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape__Length",
+                "format": null
+              }
+            ],
+            "tableFields": [
+              {
+                "jimuName": "REG_BAHIA",
+                "name": "REG_BAHIA",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "REG_BAHIA",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "COD_UPZ",
+                "name": "COD_UPZ",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "COD_UPZ",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "CIV",
+                "name": "CIV",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "CIV",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "DIRECCION",
+                "name": "DIRECCION",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "DIRECCION",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "LARGO",
+                "name": "LARGO",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "LARGO",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "ANCHO",
+                "name": "ANCHO",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "ANCHO",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "LOCALIDAD",
+                "name": "LOCALIDAD",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "LOCALIDAD",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "COD_BAHIA",
+                "name": "COD_BAHIA",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "COD_BAHIA",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "CUPOS",
+                "name": "CUPOS",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "CUPOS",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "HABILITACI",
+                "name": "HABILITACI",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "HABILITACI",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "CONCEPTO_S",
+                "name": "CONCEPTO_S",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "CONCEPTO_S",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "FASE",
+                "name": "FASE",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "FASE",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "FECHA_APRO",
+                "name": "FECHA_APRO",
+                "type": "DATE",
+                "esriType": "esriFieldTypeDate",
+                "alias": "FECHA_APRO",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "Fecha_Sal",
+                "name": "Fecha_Sal",
+                "type": "DATE",
+                "esriType": "esriFieldTypeDate",
+                "alias": "Fecha Salida",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "Rad_Salida",
+                "name": "Rad_Salida",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Rad Salida",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "Operativo",
+                "name": "Operativo",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Operativo",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "Fecha_OP",
+                "name": "Fecha_OP",
+                "type": "DATE",
+                "esriType": "esriFieldTypeDate",
+                "alias": "Fecha Operación",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "Shape__Area",
+                "name": "Shape__Area",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape__Area",
+                "format": null,
+                "editAuthority": false,
+                "editable": false,
+                "visible": true
+              },
+              {
+                "jimuName": "Shape__Length",
+                "name": "Shape__Length",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape__Length",
+                "format": null,
+                "editAuthority": false,
+                "editable": false,
+                "visible": true
+              }
+            ],
+            "enableAttachements": false,
+            "enableEdit": false,
+            "allowCsv": false,
+            "enableSearch": false,
+            "searchFields": "",
+            "enableRefresh": true,
+            "enableSelect": true,
+            "selectMode": "SINGLE",
+            "headerFontSetting": {
+              "backgroundColor": "",
+              "fontSize": 14,
+              "bold": false,
+              "color": ""
+            }
+          },
+          {
+            "id": "dataSource_1-18bb679d88b-layer-75-18bb679c014-layer-74-20",
+            "name": "Tramos ZPP",
+            "useDataSource": {
+              "dataSourceId": "dataSource_1-18bb679d88b-layer-75-18bb679c014-layer-74",
+              "mainDataSourceId": "dataSource_1-18bb679d88b-layer-75-18bb679c014-layer-74",
+              "rootDataSourceId": "dataSource_1",
+              "fields": [
                 "MVICIV",
                 "CIV_nota",
                 "Zona_Imple",
@@ -4168,7 +4721,6 @@
                 "Localidad",
                 "UPZ",
                 "Nombre_UPZ",
-                "Tipo",
                 "Eje",
                 "Comienzo",
                 "Fin",
@@ -4176,485 +4728,13 @@
                 "Cupos",
                 "EV",
                 "Costado",
+                "Fase",
                 "Modif_Moti",
                 "Fecha_Modi",
-                "Shape__Length"
-              ]
-            },
-            "allFields": [
-              {
-                "jimuName": "FID",
-                "name": "FID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "FID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "Shape_Le_1",
-                "name": "Shape_Le_1",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape_Le_1",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                }
-              },
-              {
-                "jimuName": "MVICIV",
-                "name": "MVICIV",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "MVICIV",
-                "format": null
-              },
-              {
-                "jimuName": "CIV_nota",
-                "name": "CIV_nota",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CIV_nota",
-                "format": null
-              },
-              {
-                "jimuName": "Zona_Imple",
-                "name": "Zona_Imple",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Zona_Imple",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                }
-              },
-              {
-                "jimuName": "Grupo",
-                "name": "Grupo",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Grupo",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                }
-              },
-              {
-                "jimuName": "Localidad",
-                "name": "Localidad",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Localidad",
-                "format": null
-              },
-              {
-                "jimuName": "UPZ",
-                "name": "UPZ",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "UPZ",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                }
-              },
-              {
-                "jimuName": "Nombre_UPZ",
-                "name": "Nombre_UPZ",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Nombre_UPZ",
-                "format": null
-              },
-              {
-                "jimuName": "Tipo",
-                "name": "Tipo",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Tipo",
-                "format": null
-              },
-              {
-                "jimuName": "Eje",
-                "name": "Eje",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Eje",
-                "format": null
-              },
-              {
-                "jimuName": "Comienzo",
-                "name": "Comienzo",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Comienzo",
-                "format": null
-              },
-              {
-                "jimuName": "Fin",
-                "name": "Fin",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Fin",
-                "format": null
-              },
-              {
-                "jimuName": "Reserva",
-                "name": "Reserva",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Reserva",
-                "format": null
-              },
-              {
-                "jimuName": "Cupos",
-                "name": "Cupos",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Cupos",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                }
-              },
-              {
-                "jimuName": "EV",
-                "name": "EV",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "EV",
-                "format": null
-              },
-              {
-                "jimuName": "Costado",
-                "name": "Costado",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Costado",
-                "format": null
-              },
-              {
-                "jimuName": "Modif_Moti",
-                "name": "Modif_Moti",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Modif_Moti",
-                "format": null
-              },
-              {
-                "jimuName": "Fecha_Modi",
-                "name": "Fecha_Modi",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Fecha_Modi",
-                "format": null
-              },
-              {
-                "jimuName": "Shape__Length",
-                "name": "Shape__Length",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Length",
-                "format": null
-              },
-              {
-                "jimuName": "FECHA_APROBACION",
-                "name": "FECHA_APROBACION",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "Fecha de aprobación",
-                "format": {
-                  "dateFormat": "shortDateLongTime",
-                  "digitSeparator": false
-                }
-              }
-            ],
-            "tableFields": [
-              {
-                "jimuName": "FID",
-                "name": "FID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "FID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              },
-              {
-                "jimuName": "Shape_Le_1",
-                "name": "Shape_Le_1",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape_Le_1",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "MVICIV",
-                "name": "MVICIV",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "MVICIV",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CIV_nota",
-                "name": "CIV_nota",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CIV_nota",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Zona_Imple",
-                "name": "Zona_Imple",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Zona_Imple",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Grupo",
-                "name": "Grupo",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Grupo",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Localidad",
-                "name": "Localidad",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Localidad",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "UPZ",
-                "name": "UPZ",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "UPZ",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Nombre_UPZ",
-                "name": "Nombre_UPZ",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Nombre_UPZ",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Tipo",
-                "name": "Tipo",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Tipo",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Eje",
-                "name": "Eje",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Eje",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Comienzo",
-                "name": "Comienzo",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Comienzo",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Fin",
-                "name": "Fin",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Fin",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Reserva",
-                "name": "Reserva",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Reserva",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Cupos",
-                "name": "Cupos",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Cupos",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "EV",
-                "name": "EV",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "EV",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Costado",
-                "name": "Costado",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Costado",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Modif_Moti",
-                "name": "Modif_Moti",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Modif_Moti",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Fecha_Modi",
-                "name": "Fecha_Modi",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Fecha_Modi",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Shape__Length",
-                "name": "Shape__Length",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Length",
-                "format": null,
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              }
-            ],
-            "enableAttachements": false,
-            "enableEdit": false,
-            "allowCsv": false,
-            "enableSearch": false,
-            "searchFields": "",
-            "enableRefresh": true,
-            "enableSelect": true,
-            "selectMode": "SINGLE",
-            "headerFontSetting": {
-              "backgroundColor": "",
-              "fontSize": 14,
-              "bold": false,
-              "color": ""
-            }
-          },
-          {
-            "id": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4982-12",
-            "name": "TRAMOS ZPP FASE 2",
-            "useDataSource": {
-              "dataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4982",
-              "mainDataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4982",
-              "rootDataSourceId": "dataSource_1",
-              "fields": [
-                "FID",
-                "MVICIV",
-                "Identifica",
-                "CIV_nota",
-                "Zona_Imple",
-                "Localidad",
-                "UPZ",
-                "Nombre_UPZ",
-                "Tipo",
-                "Eje",
-                "Comienzo",
-                "Fin",
-                "Reserva",
-                "Cupos",
-                "EV",
-                "Costado",
-                "Grupo",
-                "Fase",
-                "Motivo_Mod",
-                "Fecha_Modi",
+                "Fecha_Sal",
+                "RAD_SALIDA",
+                "Operativo",
+                "Fecha_OP",
                 "Shape__Length"
               ]
             },
@@ -4679,14 +4759,6 @@
                 "format": null
               },
               {
-                "jimuName": "Identifica",
-                "name": "Identifica",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Identifica",
-                "format": null
-              },
-              {
                 "jimuName": "CIV_nota",
                 "name": "CIV_nota",
                 "type": "STRING",
@@ -4700,6 +4772,17 @@
                 "type": "NUMBER",
                 "esriType": "esriFieldTypeDouble",
                 "alias": "Zona_Imple",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                }
+              },
+              {
+                "jimuName": "Grupo",
+                "name": "Grupo",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Grupo",
                 "format": {
                   "digitSeparator": false,
                   "places": 6
@@ -4730,14 +4813,6 @@
                 "type": "STRING",
                 "esriType": "esriFieldTypeString",
                 "alias": "Nombre_UPZ",
-                "format": null
-              },
-              {
-                "jimuName": "Tipo",
-                "name": "Tipo",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Tipo",
                 "format": null
               },
               {
@@ -4798,17 +4873,6 @@
                 "esriType": "esriFieldTypeString",
                 "alias": "Costado",
                 "format": null
-              },
-              {
-                "jimuName": "Grupo",
-                "name": "Grupo",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Grupo",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                }
               },
               {
                 "jimuName": "Fase",
@@ -4822,11 +4886,11 @@
                 }
               },
               {
-                "jimuName": "Motivo_Mod",
-                "name": "Motivo_Mod",
+                "jimuName": "Modif_Moti",
+                "name": "Modif_Moti",
                 "type": "STRING",
                 "esriType": "esriFieldTypeString",
-                "alias": "Motivo_Mod",
+                "alias": "Modif_Moti",
                 "format": null
               },
               {
@@ -4838,57 +4902,56 @@
                 "format": null
               },
               {
+                "jimuName": "Fecha_Sal",
+                "name": "Fecha_Sal",
+                "type": "DATE",
+                "esriType": "esriFieldTypeDate",
+                "alias": "Fecha Salida",
+                "format": null
+              },
+              {
+                "jimuName": "RAD_SALIDA",
+                "name": "RAD_SALIDA",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Rad Salida",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                }
+              },
+              {
+                "jimuName": "Operativo",
+                "name": "Operativo",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Operativo",
+                "format": null
+              },
+              {
+                "jimuName": "Fecha_OP",
+                "name": "Fecha_OP",
+                "type": "DATE",
+                "esriType": "esriFieldTypeDate",
+                "alias": "Fecha Operación",
+                "format": null
+              },
+              {
                 "jimuName": "Shape__Length",
                 "name": "Shape__Length",
                 "type": "NUMBER",
                 "esriType": "esriFieldTypeDouble",
                 "alias": "Shape__Length",
                 "format": null
-              },
-              {
-                "jimuName": "FECHA_APROBACION",
-                "name": "FECHA_APROBACION",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "Fecha de aprobación",
-                "format": {
-                  "dateFormat": "shortDateLongTime",
-                  "digitSeparator": false
-                }
               }
             ],
             "tableFields": [
-              {
-                "jimuName": "FID",
-                "name": "FID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "FID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              },
               {
                 "jimuName": "MVICIV",
                 "name": "MVICIV",
                 "type": "STRING",
                 "esriType": "esriFieldTypeString",
                 "alias": "MVICIV",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Identifica",
-                "name": "Identifica",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Identifica",
                 "format": null,
                 "editAuthority": true,
                 "editable": true,
@@ -4911,6 +4974,20 @@
                 "type": "NUMBER",
                 "esriType": "esriFieldTypeDouble",
                 "alias": "Zona_Imple",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "Grupo",
+                "name": "Grupo",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Grupo",
                 "format": {
                   "digitSeparator": false,
                   "places": 6
@@ -4950,17 +5027,6 @@
                 "type": "STRING",
                 "esriType": "esriFieldTypeString",
                 "alias": "Nombre_UPZ",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Tipo",
-                "name": "Tipo",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Tipo",
                 "format": null,
                 "editAuthority": true,
                 "editable": true,
@@ -5042,20 +5108,6 @@
                 "esriType": "esriFieldTypeString",
                 "alias": "Costado",
                 "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Grupo",
-                "name": "Grupo",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Grupo",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                },
                 "editAuthority": true,
                 "editable": true,
                 "visible": true
@@ -5075,11 +5127,11 @@
                 "visible": true
               },
               {
-                "jimuName": "Motivo_Mod",
-                "name": "Motivo_Mod",
+                "jimuName": "Modif_Moti",
+                "name": "Modif_Moti",
                 "type": "STRING",
                 "esriType": "esriFieldTypeString",
-                "alias": "Motivo_Mod",
+                "alias": "Modif_Moti",
                 "format": null,
                 "editAuthority": true,
                 "editable": true,
@@ -5097,627 +5149,22 @@
                 "visible": true
               },
               {
-                "jimuName": "Shape__Length",
-                "name": "Shape__Length",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Length",
-                "format": null,
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              }
-            ],
-            "enableAttachements": false,
-            "enableEdit": false,
-            "allowCsv": false,
-            "enableSearch": false,
-            "searchFields": "",
-            "enableRefresh": true,
-            "enableSelect": true,
-            "selectMode": "SINGLE",
-            "headerFontSetting": {
-              "backgroundColor": "",
-              "fontSize": 14,
-              "bold": false,
-              "color": ""
-            }
-          },
-          {
-            "id": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_5128-13",
-            "name": "BAHIAS GRUPO 1",
-            "useDataSource": {
-              "dataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_5128",
-              "mainDataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_5128",
-              "rootDataSourceId": "dataSource_1",
-              "fields": [
-                "FID",
-                "OBJECTID",
-                "REG_BAHIA",
-                "COD_UPZ",
-                "CIV",
-                "TP_USU",
-                "CON_SDM",
-                "CON_DADEP",
-                "CON_SDP",
-                "COSTADO",
-                "UBICA",
-                "OBSERVACIO",
-                "T_MALLA",
-                "CIRCUITO",
-                "F_EST",
-                "DIRECCION",
-                "NOM_COMUN",
-                "LARGO",
-                "ANCHO",
-                "FEC_VIS",
-                "SV_INST",
-                "SH_INST",
-                "LOCALIDAD",
-                "RUPI",
-                "COD_BAHIA",
-                "CUPOS",
-                "CREATED_US",
-                "CREATED_DA",
-                "LAST_EDITE",
-                "LAST_EDI_1",
-                "AÑO_EXP",
-                "GLOBALID",
-                "RADICADO_S",
-                "COD_BAHI_1",
-                "HABILITACI",
-                "CONCEPTO_S",
-                "Shape__Area",
-                "Shape__Length"
-              ]
-            },
-            "allFields": [
-              {
-                "jimuName": "FID",
-                "name": "FID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "FID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "OBJECTID",
-                "name": "OBJECTID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "OBJECTID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "REG_BAHIA",
-                "name": "REG_BAHIA",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "REG_BAHIA",
-                "format": null
-              },
-              {
-                "jimuName": "COD_UPZ",
-                "name": "COD_UPZ",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "COD_UPZ",
-                "format": null
-              },
-              {
-                "jimuName": "CIV",
-                "name": "CIV",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CIV",
-                "format": null
-              },
-              {
-                "jimuName": "TP_USU",
-                "name": "TP_USU",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "TP_USU",
-                "format": null
-              },
-              {
-                "jimuName": "CON_SDM",
-                "name": "CON_SDM",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "CON_SDM",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "CON_DADEP",
-                "name": "CON_DADEP",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CON_DADEP",
-                "format": null
-              },
-              {
-                "jimuName": "CON_SDP",
-                "name": "CON_SDP",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CON_SDP",
-                "format": null
-              },
-              {
-                "jimuName": "COSTADO",
-                "name": "COSTADO",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "COSTADO",
-                "format": null
-              },
-              {
-                "jimuName": "UBICA",
-                "name": "UBICA",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "UBICA",
-                "format": null
-              },
-              {
-                "jimuName": "OBSERVACIO",
-                "name": "OBSERVACIO",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "OBSERVACIO",
-                "format": null
-              },
-              {
-                "jimuName": "T_MALLA",
-                "name": "T_MALLA",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "T_MALLA",
-                "format": null
-              },
-              {
-                "jimuName": "CIRCUITO",
-                "name": "CIRCUITO",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CIRCUITO",
-                "format": null
-              },
-              {
-                "jimuName": "F_EST",
-                "name": "F_EST",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "F_EST",
-                "format": null
-              },
-              {
-                "jimuName": "DIRECCION",
-                "name": "DIRECCION",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "DIRECCION",
-                "format": null
-              },
-              {
-                "jimuName": "NOM_COMUN",
-                "name": "NOM_COMUN",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "NOM_COMUN",
-                "format": null
-              },
-              {
-                "jimuName": "LARGO",
-                "name": "LARGO",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "LARGO",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                }
-              },
-              {
-                "jimuName": "ANCHO",
-                "name": "ANCHO",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "ANCHO",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                }
-              },
-              {
-                "jimuName": "FEC_VIS",
-                "name": "FEC_VIS",
+                "jimuName": "Fecha_Sal",
+                "name": "Fecha_Sal",
                 "type": "DATE",
                 "esriType": "esriFieldTypeDate",
-                "alias": "FEC_VIS",
-                "format": null
+                "alias": "Fecha Salida",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
               },
               {
-                "jimuName": "SV_INST",
-                "name": "SV_INST",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "SV_INST",
-                "format": null
-              },
-              {
-                "jimuName": "SH_INST",
-                "name": "SH_INST",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "SH_INST",
-                "format": null
-              },
-              {
-                "jimuName": "LOCALIDAD",
-                "name": "LOCALIDAD",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "LOCALIDAD",
-                "format": null
-              },
-              {
-                "jimuName": "RUPI",
-                "name": "RUPI",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "RUPI",
-                "format": null
-              },
-              {
-                "jimuName": "COD_BAHIA",
-                "name": "COD_BAHIA",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "COD_BAHIA",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "CUPOS",
-                "name": "CUPOS",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "CUPOS",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "CREATED_US",
-                "name": "CREATED_US",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CREATED_US",
-                "format": null
-              },
-              {
-                "jimuName": "CREATED_DA",
-                "name": "CREATED_DA",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "CREATED_DA",
-                "format": null
-              },
-              {
-                "jimuName": "LAST_EDITE",
-                "name": "LAST_EDITE",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "LAST_EDITE",
-                "format": null
-              },
-              {
-                "jimuName": "LAST_EDI_1",
-                "name": "LAST_EDI_1",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "LAST_EDI_1",
-                "format": null
-              },
-              {
-                "jimuName": "AÑO_EXP",
-                "name": "AÑO_EXP",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "AÑO_EXP",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "GLOBALID",
-                "name": "GLOBALID",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "GLOBALID",
-                "format": null
-              },
-              {
-                "jimuName": "RADICADO_S",
-                "name": "RADICADO_S",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "RADICADO_S",
-                "format": null
-              },
-              {
-                "jimuName": "COD_BAHI_1",
-                "name": "COD_BAHI_1",
+                "jimuName": "RAD_SALIDA",
+                "name": "RAD_SALIDA",
                 "type": "NUMBER",
                 "esriType": "esriFieldTypeDouble",
-                "alias": "COD_BAHI_1",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                }
-              },
-              {
-                "jimuName": "HABILITACI",
-                "name": "HABILITACI",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "HABILITACI",
-                "format": null
-              },
-              {
-                "jimuName": "CONCEPTO_S",
-                "name": "CONCEPTO_S",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CONCEPTO_S",
-                "format": null
-              },
-              {
-                "jimuName": "Shape__Area",
-                "name": "Shape__Area",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Area",
-                "format": null
-              },
-              {
-                "jimuName": "Shape__Length",
-                "name": "Shape__Length",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Length",
-                "format": null
-              },
-              {
-                "jimuName": "FECHA_APROBACION",
-                "name": "FECHA_APROBACION",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "Fecha de aprobación",
-                "format": {
-                  "dateFormat": "shortDateLongTime",
-                  "digitSeparator": false
-                }
-              }
-            ],
-            "tableFields": [
-              {
-                "jimuName": "FID",
-                "name": "FID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "FID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              },
-              {
-                "jimuName": "OBJECTID",
-                "name": "OBJECTID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "OBJECTID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "REG_BAHIA",
-                "name": "REG_BAHIA",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "REG_BAHIA",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "COD_UPZ",
-                "name": "COD_UPZ",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "COD_UPZ",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CIV",
-                "name": "CIV",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CIV",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "TP_USU",
-                "name": "TP_USU",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "TP_USU",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CON_SDM",
-                "name": "CON_SDM",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "CON_SDM",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CON_DADEP",
-                "name": "CON_DADEP",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CON_DADEP",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CON_SDP",
-                "name": "CON_SDP",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CON_SDP",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "COSTADO",
-                "name": "COSTADO",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "COSTADO",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "UBICA",
-                "name": "UBICA",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "UBICA",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "OBSERVACIO",
-                "name": "OBSERVACIO",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "OBSERVACIO",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "T_MALLA",
-                "name": "T_MALLA",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "T_MALLA",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CIRCUITO",
-                "name": "CIRCUITO",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CIRCUITO",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "F_EST",
-                "name": "F_EST",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "F_EST",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "DIRECCION",
-                "name": "DIRECCION",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "DIRECCION",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "NOM_COMUN",
-                "name": "NOM_COMUN",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "NOM_COMUN",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "LARGO",
-                "name": "LARGO",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "LARGO",
+                "alias": "Rad Salida",
                 "format": {
                   "digitSeparator": false,
                   "places": 6
@@ -5727,1081 +5174,25 @@
                 "visible": true
               },
               {
-                "jimuName": "ANCHO",
-                "name": "ANCHO",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "ANCHO",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                },
+                "jimuName": "Operativo",
+                "name": "Operativo",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Operativo",
+                "format": null,
                 "editAuthority": true,
                 "editable": true,
                 "visible": true
               },
               {
-                "jimuName": "FEC_VIS",
-                "name": "FEC_VIS",
+                "jimuName": "Fecha_OP",
+                "name": "Fecha_OP",
                 "type": "DATE",
                 "esriType": "esriFieldTypeDate",
-                "alias": "FEC_VIS",
+                "alias": "Fecha Operación",
                 "format": null,
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "SV_INST",
-                "name": "SV_INST",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "SV_INST",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "SH_INST",
-                "name": "SH_INST",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "SH_INST",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "LOCALIDAD",
-                "name": "LOCALIDAD",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "LOCALIDAD",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "RUPI",
-                "name": "RUPI",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "RUPI",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "COD_BAHIA",
-                "name": "COD_BAHIA",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "COD_BAHIA",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CUPOS",
-                "name": "CUPOS",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "CUPOS",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CREATED_US",
-                "name": "CREATED_US",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CREATED_US",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CREATED_DA",
-                "name": "CREATED_DA",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "CREATED_DA",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "LAST_EDITE",
-                "name": "LAST_EDITE",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "LAST_EDITE",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "LAST_EDI_1",
-                "name": "LAST_EDI_1",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "LAST_EDI_1",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "AÑO_EXP",
-                "name": "AÑO_EXP",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "AÑO_EXP",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "GLOBALID",
-                "name": "GLOBALID",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "GLOBALID",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "RADICADO_S",
-                "name": "RADICADO_S",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "RADICADO_S",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "COD_BAHI_1",
-                "name": "COD_BAHI_1",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "COD_BAHI_1",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "HABILITACI",
-                "name": "HABILITACI",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "HABILITACI",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CONCEPTO_S",
-                "name": "CONCEPTO_S",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CONCEPTO_S",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Shape__Area",
-                "name": "Shape__Area",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Area",
-                "format": null,
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              },
-              {
-                "jimuName": "Shape__Length",
-                "name": "Shape__Length",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Length",
-                "format": null,
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              }
-            ],
-            "enableAttachements": false,
-            "enableEdit": false,
-            "allowCsv": false,
-            "enableSearch": false,
-            "searchFields": "",
-            "enableRefresh": true,
-            "enableSelect": true,
-            "selectMode": "SINGLE",
-            "headerFontSetting": {
-              "backgroundColor": "",
-              "fontSize": 14,
-              "bold": false,
-              "color": ""
-            }
-          },
-          {
-            "id": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_6769-14",
-            "name": "BAHIAS GRUPO 2",
-            "useDataSource": {
-              "dataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_6769",
-              "mainDataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_6769",
-              "rootDataSourceId": "dataSource_1",
-              "fields": [
-                "FID",
-                "REG_BAHIA",
-                "CIV",
-                "TP_USU",
-                "CON_SDM",
-                "CON_DADEP",
-                "CON_SDP",
-                "COSTADO",
-                "UBICA",
-                "OBSERVACIO",
-                "T_MALLA",
-                "CIRCUITO",
-                "F_EST",
-                "DIRECCION",
-                "NOM_COMUN",
-                "LARGO",
-                "ANCHO",
-                "SV_INST",
-                "SH_INST",
-                "LOCALIDAD",
-                "RUPI",
-                "COD_BAHIA",
-                "CUPOS",
-                "CREATED_US",
-                "AÑO_EXP",
-                "COD_BAHI_1",
-                "CONCEPTO_S",
-                "HABILITACI",
-                "OBJECTID",
-                "COD_UPZ",
-                "FEC_VIS",
-                "LAST_EDITE",
-                "GLOBALID",
-                "RADICADO_S",
-                "CREATED_DA",
-                "LAST_EDI_1",
-                "Shape__Area",
-                "Shape__Length"
-              ]
-            },
-            "allFields": [
-              {
-                "jimuName": "FID",
-                "name": "FID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "FID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "REG_BAHIA",
-                "name": "REG_BAHIA",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "REG_BAHIA",
-                "format": null
-              },
-              {
-                "jimuName": "CIV",
-                "name": "CIV",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CIV",
-                "format": null
-              },
-              {
-                "jimuName": "TP_USU",
-                "name": "TP_USU",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "TP_USU",
-                "format": null
-              },
-              {
-                "jimuName": "CON_SDM",
-                "name": "CON_SDM",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "CON_SDM",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "CON_DADEP",
-                "name": "CON_DADEP",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CON_DADEP",
-                "format": null
-              },
-              {
-                "jimuName": "CON_SDP",
-                "name": "CON_SDP",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CON_SDP",
-                "format": null
-              },
-              {
-                "jimuName": "COSTADO",
-                "name": "COSTADO",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "COSTADO",
-                "format": null
-              },
-              {
-                "jimuName": "UBICA",
-                "name": "UBICA",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "UBICA",
-                "format": null
-              },
-              {
-                "jimuName": "OBSERVACIO",
-                "name": "OBSERVACIO",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "OBSERVACIO",
-                "format": null
-              },
-              {
-                "jimuName": "T_MALLA",
-                "name": "T_MALLA",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "T_MALLA",
-                "format": null
-              },
-              {
-                "jimuName": "CIRCUITO",
-                "name": "CIRCUITO",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CIRCUITO",
-                "format": null
-              },
-              {
-                "jimuName": "F_EST",
-                "name": "F_EST",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "F_EST",
-                "format": null
-              },
-              {
-                "jimuName": "DIRECCION",
-                "name": "DIRECCION",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "DIRECCION",
-                "format": null
-              },
-              {
-                "jimuName": "NOM_COMUN",
-                "name": "NOM_COMUN",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "NOM_COMUN",
-                "format": null
-              },
-              {
-                "jimuName": "LARGO",
-                "name": "LARGO",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "LARGO",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                }
-              },
-              {
-                "jimuName": "ANCHO",
-                "name": "ANCHO",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "ANCHO",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                }
-              },
-              {
-                "jimuName": "SV_INST",
-                "name": "SV_INST",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "SV_INST",
-                "format": null
-              },
-              {
-                "jimuName": "SH_INST",
-                "name": "SH_INST",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "SH_INST",
-                "format": null
-              },
-              {
-                "jimuName": "LOCALIDAD",
-                "name": "LOCALIDAD",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "LOCALIDAD",
-                "format": null
-              },
-              {
-                "jimuName": "RUPI",
-                "name": "RUPI",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "RUPI",
-                "format": null
-              },
-              {
-                "jimuName": "COD_BAHIA",
-                "name": "COD_BAHIA",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "COD_BAHIA",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "CUPOS",
-                "name": "CUPOS",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "CUPOS",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "CREATED_US",
-                "name": "CREATED_US",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CREATED_US",
-                "format": null
-              },
-              {
-                "jimuName": "AÑO_EXP",
-                "name": "AÑO_EXP",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "AÑO_EXP",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "COD_BAHI_1",
-                "name": "COD_BAHI_1",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "COD_BAHI_1",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                }
-              },
-              {
-                "jimuName": "CONCEPTO_S",
-                "name": "CONCEPTO_S",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CONCEPTO_S",
-                "format": null
-              },
-              {
-                "jimuName": "HABILITACI",
-                "name": "HABILITACI",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "HABILITACI",
-                "format": null
-              },
-              {
-                "jimuName": "OBJECTID",
-                "name": "OBJECTID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "OBJECTID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "COD_UPZ",
-                "name": "COD_UPZ",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "COD_UPZ",
-                "format": null
-              },
-              {
-                "jimuName": "FEC_VIS",
-                "name": "FEC_VIS",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "FEC_VIS",
-                "format": null
-              },
-              {
-                "jimuName": "LAST_EDITE",
-                "name": "LAST_EDITE",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "LAST_EDITE",
-                "format": null
-              },
-              {
-                "jimuName": "GLOBALID",
-                "name": "GLOBALID",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "GLOBALID",
-                "format": null
-              },
-              {
-                "jimuName": "RADICADO_S",
-                "name": "RADICADO_S",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "RADICADO_S",
-                "format": null
-              },
-              {
-                "jimuName": "CREATED_DA",
-                "name": "CREATED_DA",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "CREATED_DA",
-                "format": null
-              },
-              {
-                "jimuName": "LAST_EDI_1",
-                "name": "LAST_EDI_1",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "LAST_EDI_1",
-                "format": null
-              },
-              {
-                "jimuName": "Shape__Area",
-                "name": "Shape__Area",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Area",
-                "format": null
-              },
-              {
-                "jimuName": "Shape__Length",
-                "name": "Shape__Length",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Length",
-                "format": null
-              },
-              {
-                "jimuName": "FECHA_APROBACION",
-                "name": "FECHA_APROBACION",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "Fecha de aprobación",
-                "format": {
-                  "dateFormat": "shortDateLongTime",
-                  "digitSeparator": false
-                }
-              }
-            ],
-            "tableFields": [
-              {
-                "jimuName": "FID",
-                "name": "FID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "FID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              },
-              {
-                "jimuName": "REG_BAHIA",
-                "name": "REG_BAHIA",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "REG_BAHIA",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CIV",
-                "name": "CIV",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CIV",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "TP_USU",
-                "name": "TP_USU",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "TP_USU",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CON_SDM",
-                "name": "CON_SDM",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "CON_SDM",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CON_DADEP",
-                "name": "CON_DADEP",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CON_DADEP",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CON_SDP",
-                "name": "CON_SDP",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CON_SDP",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "COSTADO",
-                "name": "COSTADO",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "COSTADO",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "UBICA",
-                "name": "UBICA",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "UBICA",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "OBSERVACIO",
-                "name": "OBSERVACIO",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "OBSERVACIO",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "T_MALLA",
-                "name": "T_MALLA",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "T_MALLA",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CIRCUITO",
-                "name": "CIRCUITO",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CIRCUITO",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "F_EST",
-                "name": "F_EST",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "F_EST",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "DIRECCION",
-                "name": "DIRECCION",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "DIRECCION",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "NOM_COMUN",
-                "name": "NOM_COMUN",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "NOM_COMUN",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "LARGO",
-                "name": "LARGO",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "LARGO",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "ANCHO",
-                "name": "ANCHO",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "ANCHO",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "SV_INST",
-                "name": "SV_INST",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "SV_INST",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "SH_INST",
-                "name": "SH_INST",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "SH_INST",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "LOCALIDAD",
-                "name": "LOCALIDAD",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "LOCALIDAD",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "RUPI",
-                "name": "RUPI",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "RUPI",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "COD_BAHIA",
-                "name": "COD_BAHIA",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "COD_BAHIA",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CUPOS",
-                "name": "CUPOS",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "CUPOS",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CREATED_US",
-                "name": "CREATED_US",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CREATED_US",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "AÑO_EXP",
-                "name": "AÑO_EXP",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "AÑO_EXP",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "COD_BAHI_1",
-                "name": "COD_BAHI_1",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "COD_BAHI_1",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 6
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CONCEPTO_S",
-                "name": "CONCEPTO_S",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CONCEPTO_S",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "HABILITACI",
-                "name": "HABILITACI",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "HABILITACI",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "OBJECTID",
-                "name": "OBJECTID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "OBJECTID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "COD_UPZ",
-                "name": "COD_UPZ",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "COD_UPZ",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "FEC_VIS",
-                "name": "FEC_VIS",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "FEC_VIS",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "LAST_EDITE",
-                "name": "LAST_EDITE",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "LAST_EDITE",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "GLOBALID",
-                "name": "GLOBALID",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "GLOBALID",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "RADICADO_S",
-                "name": "RADICADO_S",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "RADICADO_S",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CREATED_DA",
-                "name": "CREATED_DA",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "CREATED_DA",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "LAST_EDI_1",
-                "name": "LAST_EDI_1",
-                "type": "DATE",
-                "esriType": "esriFieldTypeDate",
-                "alias": "LAST_EDI_1",
-                "format": null,
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Shape__Area",
-                "name": "Shape__Area",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Area",
-                "format": null,
-                "editAuthority": false,
-                "editable": false,
                 "visible": true
               },
               {
@@ -7000,11 +5391,11 @@
           ]
         },
         {
-          "dataSourceId": "dataSource_1-PARADEROS_9647",
-          "mainDataSourceId": "dataSource_1-PARADEROS_9647",
+          "dataSourceId": "dataSource_1-18c117e917a-layer-70",
+          "mainDataSourceId": "dataSource_1-18c117e917a-layer-70",
           "rootDataSourceId": "dataSource_1",
           "fields": [
-            "FID",
+            "OBJECTID",
             "orden",
             "fecha_visi",
             "CENEFA",
@@ -7013,7 +5404,7 @@
             "NOMBRE",
             "DIRECCIÓN",
             "LOCALIDAD",
-            "VALIDACION",
+            "VALIDACIONES",
             "FECHA_VALI",
             "PK_Andén_",
             "CIV",
@@ -7028,7 +5419,8 @@
             "IMPLEMENTA",
             "LONGUITUD",
             "LATITUD",
-            "TIPOLOGIA"
+            "TIPOLOGIA",
+            "OBSERVACIONES__LINEAMIENTOS_SV"
           ]
         },
         {
@@ -7061,8 +5453,8 @@
           ]
         },
         {
-          "dataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4846",
-          "mainDataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4846",
+          "dataSourceId": "dataSource_1-18bb679d88b-layer-75-18bb67861ad-layer-72",
+          "mainDataSourceId": "dataSource_1-18bb679d88b-layer-75-18bb67861ad-layer-72",
           "rootDataSourceId": "dataSource_1",
           "fields": [
             "FID",
@@ -7077,16 +5469,43 @@
             "Snippet",
             "PopupInfo",
             "Shape_Leng",
+            "AREA",
+            "ESTADO",
+            "Shape__Area",
             "Shape__Length"
           ]
         },
         {
-          "dataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_1167",
-          "mainDataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_1167",
+          "dataSourceId": "dataSource_1-18bb679d88b-layer-75-18bb6787555-layer-73",
+          "mainDataSourceId": "dataSource_1-18bb679d88b-layer-75-18bb6787555-layer-73",
           "rootDataSourceId": "dataSource_1",
           "fields": [
-            "FID",
-            "Shape_Le_1",
+            "REG_BAHIA",
+            "COD_UPZ",
+            "CIV",
+            "DIRECCION",
+            "LARGO",
+            "ANCHO",
+            "LOCALIDAD",
+            "COD_BAHIA",
+            "CUPOS",
+            "HABILITACI",
+            "CONCEPTO_S",
+            "FASE",
+            "FECHA_APRO",
+            "Fecha_Sal",
+            "Rad_Salida",
+            "Operativo",
+            "Fecha_OP",
+            "Shape__Area",
+            "Shape__Length"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_1-18bb679d88b-layer-75-18bb679c014-layer-74",
+          "mainDataSourceId": "dataSource_1-18bb679d88b-layer-75-18bb679c014-layer-74",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
             "MVICIV",
             "CIV_nota",
             "Zona_Imple",
@@ -7094,7 +5513,6 @@
             "Localidad",
             "UPZ",
             "Nombre_UPZ",
-            "Tipo",
             "Eje",
             "Comienzo",
             "Fin",
@@ -7102,126 +5520,13 @@
             "Cupos",
             "EV",
             "Costado",
+            "Fase",
             "Modif_Moti",
             "Fecha_Modi",
-            "Shape__Length"
-          ]
-        },
-        {
-          "dataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4982",
-          "mainDataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_4982",
-          "rootDataSourceId": "dataSource_1",
-          "fields": [
-            "FID",
-            "MVICIV",
-            "Identifica",
-            "CIV_nota",
-            "Zona_Imple",
-            "Localidad",
-            "UPZ",
-            "Nombre_UPZ",
-            "Tipo",
-            "Eje",
-            "Comienzo",
-            "Fin",
-            "Reserva",
-            "Cupos",
-            "EV",
-            "Costado",
-            "Grupo",
-            "Fase",
-            "Motivo_Mod",
-            "Fecha_Modi",
-            "Shape__Length"
-          ]
-        },
-        {
-          "dataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_5128",
-          "mainDataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_5128",
-          "rootDataSourceId": "dataSource_1",
-          "fields": [
-            "FID",
-            "OBJECTID",
-            "REG_BAHIA",
-            "COD_UPZ",
-            "CIV",
-            "TP_USU",
-            "CON_SDM",
-            "CON_DADEP",
-            "CON_SDP",
-            "COSTADO",
-            "UBICA",
-            "OBSERVACIO",
-            "T_MALLA",
-            "CIRCUITO",
-            "F_EST",
-            "DIRECCION",
-            "NOM_COMUN",
-            "LARGO",
-            "ANCHO",
-            "FEC_VIS",
-            "SV_INST",
-            "SH_INST",
-            "LOCALIDAD",
-            "RUPI",
-            "COD_BAHIA",
-            "CUPOS",
-            "CREATED_US",
-            "CREATED_DA",
-            "LAST_EDITE",
-            "LAST_EDI_1",
-            "AÑO_EXP",
-            "GLOBALID",
-            "RADICADO_S",
-            "COD_BAHI_1",
-            "HABILITACI",
-            "CONCEPTO_S",
-            "Shape__Area",
-            "Shape__Length"
-          ]
-        },
-        {
-          "dataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_6769",
-          "mainDataSourceId": "dataSource_1-18b3e1640b9-layer-64-230804_CONSOLIDADO_TRAMOS_BAHIAS_ZPP_6769",
-          "rootDataSourceId": "dataSource_1",
-          "fields": [
-            "FID",
-            "REG_BAHIA",
-            "CIV",
-            "TP_USU",
-            "CON_SDM",
-            "CON_DADEP",
-            "CON_SDP",
-            "COSTADO",
-            "UBICA",
-            "OBSERVACIO",
-            "T_MALLA",
-            "CIRCUITO",
-            "F_EST",
-            "DIRECCION",
-            "NOM_COMUN",
-            "LARGO",
-            "ANCHO",
-            "SV_INST",
-            "SH_INST",
-            "LOCALIDAD",
-            "RUPI",
-            "COD_BAHIA",
-            "CUPOS",
-            "CREATED_US",
-            "AÑO_EXP",
-            "COD_BAHI_1",
-            "CONCEPTO_S",
-            "HABILITACI",
-            "OBJECTID",
-            "COD_UPZ",
-            "FEC_VIS",
-            "LAST_EDITE",
-            "GLOBALID",
-            "RADICADO_S",
-            "CREATED_DA",
-            "LAST_EDI_1",
-            "Shape__Area",
+            "Fecha_Sal",
+            "RAD_SALIDA",
+            "Operativo",
+            "Fecha_OP",
             "Shape__Length"
           ]
         }
@@ -9267,7 +7572,7 @@
       "home": []
     }
   ],
-  "timestamp": 1698229718606,
+  "timestamp": 1701781864728,
   "header": {
     "layout": {
       "LARGE": "layout_15"
