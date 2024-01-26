@@ -950,7 +950,6 @@
       "uri": "widgets/common/text/",
       "config": {
         "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24px;\">Visor Subdirección de Infraestructura</span></p>",
-        "placeholder": "<p><span style=\"font-size: 24px; color: rgb(255, 255, 255);\">Título</span></p>",
         "style": {
           "verticalAlign": "center",
           "wrap": true,
@@ -966,7 +965,6 @@
       "uri": "widgets/common/text/",
       "config": {
         "text": "<p><span style=\"font-size: 12px; color: rgb(255, 255, 255);\">﻿Secretaría Distrital de Movilidad﻿</span></p>",
-        "placeholder": "<p><span style=\"font-size: 16px; color: rgb(255, 255, 255);\">Subtítulo</span></p>",
         "style": {
           "verticalAlign": "center",
           "wrap": true,
@@ -1032,7 +1030,8 @@
           "canNavigation": false,
           "canScaleBar": true,
           "canSelect": true,
-          "canSelectState": true
+          "canSelectState": true,
+          "canExtentNavigate": false
         },
         "isUseCustomMapState": false,
         "initialMapState": null,
@@ -15140,7 +15139,7 @@
       "home": []
     }
   ],
-  "timestamp": 1706263060347,
+  "timestamp": 1706267538014,
   "header": {
     "layout": {
       "LARGE": "layout_15"
@@ -15160,7 +15159,13 @@
     }
   },
   "attributes": {
-    "portalUrl": "https://movilidadbogota.maps.arcgis.com"
+    "portalUrl": "https://movilidadbogota.maps.arcgis.com",
+    "isWebTier": false,
+    "clientId": "",
+    "title": "Visor SI",
+    "description": "",
+    "type": "Web Experience",
+    "thumbnail": null
   },
   "sharedThemeVariables": {
     "header": {},
