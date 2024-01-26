@@ -1,0 +1,64 @@
+{
+  "query_filters": [
+    {
+      "layerId": "Actuaciones_Estrategicas_3323",
+      "field": "FECHA_CAPT"
+    },
+    {
+      "layerId": "ASV_ISV_2229",
+      "field": "FECHA"
+    },
+    {
+      "layerId": "ESTUDIOS_TRANSITO_1813",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "ESTUDIOS_TRANSITO_606",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "ESTUDIOS_TRANSITO_916",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "18a6197222b-layer-69",
+      "title": "SGR-GMV-Area",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "18a6197222b-layer-70",
+      "title": "SGR-GMV-Línea",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "18d3169ae59-layer-71",
+      "title": "UMP_SGR",
+      "field": "FECHA_CORT"
+    },
+    {
+      "layerId": "18bb6787555-layer-73",
+      "title": "Bahías ZPP",
+      "field": "FECHA_APRO"
+    },
+    {
+      "layerId": "18bb679c014-layer-74",
+      "title": "Tramos ZPP",
+      "field": "Fecha_Sal"
+    },
+    {
+      "layerId": "18a619719be-layer-63",
+      "title": "Senderos",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "18a619719bf-layer-64",
+      "title": "Ejes",
+      "field": "FECHA_APROBACION"
+    },
+    {
+      "layerId": "18a617cc322-layer-102",
+      "title": "Cicloalamedas Proyectadas POT",
+      "field": "FECHA_CAPT"
+    }
+  ]
+}
